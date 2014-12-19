@@ -14,3 +14,4 @@ source 'http://rubygems.org'
     gem 'activeadmin', github: 'activeadmin'
     gem 'tzinfo-data'
     gem 'bcrypt-ruby', :require => "bcrypt"
+    gem 'carrierwave'

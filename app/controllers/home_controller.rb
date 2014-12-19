@@ -1,20 +1,13 @@
 class HomeController < ApplicationController
   def index
-  end
-
-  def categories
+    @posts = Post.all
 
   end
-
-  def details
-
+  def us
+  @news_highlight = Post.all
   end
-
-  def search
+  def locate
 
   end
 
-  def sample
-    
-  end
 end
