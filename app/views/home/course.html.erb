@@ -1,4 +1,5 @@
 <%= render 'header' %>
+
 <section id="ccr-main-section">
   <div class="container">
 
@@ -6,95 +7,25 @@
     <section id="ccr-left-section" class="col-md-8">
 
 
+      <% @course.each do |course| %>
+          <div class="ccr-last-update">
+            <div class="update-ribon"></div> <!-- /.update-ribon -->
+            <span class="update-ribon-right"></span> <!-- /.update-ribon-left -->
+            <div class="update-news-text" id="update-news-text">
+              <ul id="latestUpdate">
 
+                <%= link_to course.title, {:action => 'course_detail', :id => course.id} %>
 
-      <div class="ccr-last-update">
-        <div class="update-ribon"></div> <!-- /.update-ribon -->
-        <span class="update-ribon-right"></span> <!-- /.update-ribon-left -->
-        <div class="update-news-text" id="update-news-text">
-          <ul id="latestUpdate">
-            <%= link_to 'Khoa học xã hội', home_social_path %>
-
-          </ul>
-        </div> <!-- /.update-text -->
-
-
-      </div> <!-- / .ccr-last-update -->
-      <div class="ccr-last-update">
-        <div class="update-ribon"></div> <!-- /.update-ribon -->
-        <span class="update-ribon-right"></span> <!-- /.update-ribon-left -->
-        <div class="update-news-text" id="update-news-text">
-          <ul id="latestUpdate">
-            <%= link_to 'Khoa học tự nhiên', home_natural_path %>
-
-          </ul>
-        </div> <!-- /.update-text -->
-
-
-      </div> <!-- / .ccr-last-update -->
-      <div class="ccr-last-update">
-        <div class="update-ribon"></div> <!-- /.update-ribon -->
-        <span class="update-ribon-right"></span> <!-- /.update-ribon-left -->
-        <div class="update-news-text" id="update-news-text">
-          <ul id="latestUpdate">
-            <%= link_to 'Cuộc sống khoa học và Y tế', home_medical_path %>
-
-          </ul>
-        </div> <!-- /.update-text -->
-
-
-      </div> <!-- / .ccr-last-update -->
-      <div class="ccr-last-update">
-        <div class="update-ribon"></div> <!-- /.update-ribon -->
-        <span class="update-ribon-right"></span> <!-- /.update-ribon-left -->
-        <div class="update-news-text" id="update-news-text">
-          <ul id="latestUpdate">
-            <%= link_to 'Kĩ thuật và Công Nghệ', home_tech_path %>
-
-          </ul>
-        </div> <!-- /.update-text -->
-
-
-      </div> <!-- / .ccr-last-update -->
-      <div class="ccr-last-update">
-        <div class="update-ribon"></div> <!-- /.update-ribon -->
-        <span class="update-ribon-right"></span> <!-- /.update-ribon-left -->
-        <div class="update-news-text" id="update-news-text">
-          <ul id="latestUpdate">
-            <%= link_to 'Kinh doanh và Quản lí', home_manage_path %>
-
-          </ul>
-        </div> <!-- /.update-text -->
-
-
-      </div> <!-- / .ccr-last-update -->
-      <div class="ccr-last-update">
-        <div class="update-ribon"></div> <!-- /.update-ribon -->
-        <span class="update-ribon-right"></span> <!-- /.update-ribon-left -->
-        <div class="update-news-text" id="update-news-text">
-          <ul id="latestUpdate">
-            <%= link_to 'Nghệ thuật và nhân văn', home_art_path %>
-
-          </ul>
-        </div> <!-- /.update-text -->
-
-
-      </div> <!-- / .ccr-last-update -->
-
-
-
-
-
-
+              </ul>
+            </div> <!-- /.update-text -->
+          </div> <!-- / .ccr-last-update -->
+      <% end %>
 
 
 
     </section><!-- /.col-md-8 / #ccr-left-section -->
 
-
-
-
-
   </div><!-- /.container -->
 </section><!-- / #ccr-main-section -->
+
 <%= render 'footer' %>

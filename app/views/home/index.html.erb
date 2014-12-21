@@ -14,11 +14,11 @@
         <span class="update-ribon-right"></span> <!-- /.update-ribon-left -->
         <div class="update-news-text" id="update-news-text">
           <ul id="latestUpdate">
-            <li><a href="#">Bảng xếp hạng các trường đại học</a></li>
-            <li><a href="#">Two</a></li>
-            <li><a href="#">Three</a></li>
-            <li><a href="#">Four</a></li>
-            <li><a href="#">Five</a></li>
+            <li><a <%= link_to 'Bảng xếp hạng các trường đại học', home_rank_path %></a></li>
+            <li><a <%= link_to 'Bảng xếp hạng các trường đại học', home_rank_path %></a></li>
+            <li><a <%= link_to 'Bảng xếp hạng các trường đại học', home_rank_path %></a></li>
+            <li><a <%= link_to 'Bảng xếp hạng các trường đại học', home_rank_path %></a></li>
+            <li><a <%= link_to 'Bảng xếp hạng các trường đại học', home_rank_path %></a></li>
           </ul>
         </div> <!-- /.update-text -->
 
@@ -33,28 +33,28 @@
           <div class="active item">
             <div class="container slide-element">
               <img src="<%= image_path("slide/main-slide-1.jpg") %>" alt="Main Slide Image 1">
-              <p><a href="#">Bảng xếp hạng các trường đại học</a></p>
+              <p><a <%= link_to 'Bảng xếp hạng các trường đại học', home_rank_path %></a></p>
             </div> <!-- /.slide-element -->
           </div> <!--/.active /.item -->
 
           <div class="item">
             <div class="container slide-element">
               <img src="<%= image_path("slide/main-slide-2.jpg") %>" alt="Main Slide Image 1">
-              <p><a href="#">Bảng xếp hạng các trường đại học</a></p>
+              <p><a <%= link_to 'Bảng xếp hạng các trường đại học', home_rank_path %></a></p>
             </div> <!-- /.slide-element -->
           </div> <!--  /.item -->
 
           <div class="item">
             <div class="container slide-element">
               <img src="<%= image_path("slide/main-slide-3.jpg") %>" alt="Main Slide Image 1">
-              <p><a href="#">Bảng xếp hạng các trường đại học</a></p>
+              <p><a <%= link_to 'Bảng xếp hạng các trường đại học', home_rank_path %></a></p>
             </div> <!-- /.slide-element -->
           </div> <!-- .item -->
 
           <div class="item">
             <div class="container slide-element">
               <img src="<%= image_path("slide/main-slide-4.jpg") %>" alt="Main Slide Image 1">
-              <p><a href="#">Bảng xếp hạng các trường đại học</a></p>
+              <p><a <%= link_to 'Bảng xếp hạng các trường đại học', home_rank_path %></a></p>
             </div> <!-- /.slide-element -->
           </div> <!-- /.item -->
 
@@ -89,24 +89,24 @@
           <li>
             <div class="ccr-thumbnail">
               <img src="<%= image_path("thumbnail1.jpg") %>" alt="Thumbnail 1">
-              <p><a href="#postlink">Xem thêm</a></p>
+              <p><a <%= link_to 'Xem Thêm', home_course_path %> > </a></p>
             </div>
 
-            <h4><a href="#postlink">Khoa học tự nhiên</a></h4>
+            <h4> <%= link_to 'Khoa học tự nhiên', home_course_path %> </h4>
           </li>
           <li>
             <div class="ccr-thumbnail">
               <img src="<%= image_path("thumbnail2.jpg") %>" alt="Thumbnail 1">
-              <p><a href="#postlink">Xem thêm</a></p>
+              <p><a <%= link_to 'Xem Thêm', home_course_path %> > </a></p>
             </div>
-            <h4><a href="#postlink">Kinh doanh & Quản lý</a></h4>
+            <h4><%= link_to 'Kinh doanh quản lí', home_course_path %></h4>
           </li>
           <li>
             <div class="ccr-thumbnail">
               <img src="<%= image_path("thumbnail3.jpg") %>" alt="Thumbnail 1">
-              <p><a href="#postlink">Xem thêm</a></p>
+              <p><a <%= link_to 'Xem Thêm', home_course_path %> > </a></p>
             </div>
-            <h4><a href="#postlink">Kỹ thuật và Công nghệ</a></h4>
+            <h4><%= link_to 'Kĩ thuật và công nghệ', home_course_path %></h4>
           </li>
 
 
@@ -132,7 +132,7 @@
             <h5></h5>
             Như nhiều quốc gia trên thế giới xây dựng trường đại học đẳng cấp thế giới, chưa bao giờ có rất nhiều khả năng hấp dẫn đối với sinh viên quốc tế. Tìm điểm đến của sinh viên lý tưởng của bạn với hướng dẫn sinh viên nước của chúng tôi bao gồm cả yếu tố cần thiết từ hồ sơ nhập học, học phí, visa, với văn hóa địa phương và đời sống sinh viên.
             <div class="like-comment-readmore">
-              <a class="read-more" href="#">Xem thêm</a>
+              <p><a <%= link_to 'Xem Thêm', home_locate_path %> </p>
             </div> <!-- /.like-comment-readmore -->
           </div>
         </section> <!-- /#featured-world-news -->
@@ -143,89 +143,38 @@
 
             <div class="ccr-thumbnail">
               <img src="<%= image_path("map/map_africa.png") %>" alt="thumbnail-small-1.jpg">
-              <p><a href="#postlink">Xem thêm</a></p>
+              <p><a <%= link_to 'Xem Thêm', home_locate_path %> > </a></p>
             </div>
-            <h5><a href="#">Bảng xếp hạng các trường châu Phi...</a></h5>
+            <h5><%= link_to 'Bảng xếp hạng các trường châu Phi...', home_locate_path %></h5>
           </li>
           <li>
 
             <div class="ccr-thumbnail">
               <img src="<%= image_path("map/map_europe.png") %>" alt="thumbnail-small-1.jpg">
-              <p><a href="#postlink">Xem thêm</a></p>
+              <p><a <%= link_to 'Xem Thêm', home_locate_path %> > </a></p>
             </div>
-            <h5><a href="#">Bảng xếp hạng các trường châu Âu...</a></h5>
+            <h5><%= link_to 'Bảng xếp hạng các trường châu Âu...', home_locate_path %></h5>
           </li>
           <li>
 
             <div class="ccr-thumbnail">
               <img src="<%= image_path("map/map_asia.png") %>" alt="thumbnail-small-1.jpg">
-              <p><a href="#postlink">Xem thêm</a></p>
+              <p><a <%= link_to 'Xem Thêm', home_locate_path %> > </a></p>
             </div>
-            <h5><a href="#">Bảng xếp hạng các trường châu Á...</a></h5>
+            <h5><%= link_to 'Bảng xếp hạng các trường châu Á...', home_locate_path %></h5>
           </li>
           <li>
 
             <div class="ccr-thumbnail">
               <img src="<%= image_path("map/map_usa_can.png") %>" alt="thumbnail-small-1.jpg">
-              <p><a href="#postlink">Xem thêm</a></p>
+              <p><a <%= link_to 'Xem Thêm', home_locate_path %> > </a></p>
             </div>
-            <h5><a href="#">Bảng xếp hạng các trường tại Mỹ & Canada...</a></h5>
+            <h5><%= link_to 'Bảng xếp hạng các trường tại Mỹ và Canada...', home_locate_path %></h5>
           </li>
 
         </ul>
 
       </section> <!-- / #ccr-world-news -->
-
-
-
-
-      <section class="bottom-border"></section>
-
-      <section id="ccr-sports-gallery">
-        <div class="ccr-gallery-ttile">
-          <span></span>
-          <p>Sự kiện</p>
-        </div> <!-- .ccr-gallery-ttile -->
-
-        <section class="featured-sports-news">
-          <div class="featured-sports-newss-img"><img src="<%= image_path("sports-thumb-1.jpg") %>" alt="Thumb"></div>
-          <div class="featured-sports-news-post">
-            <h5></h5>
-            Fit cung cấp hai tour: The World Tour Grad School cho tất cả các sinh viên quan tâm trong các nghiên cứu sau đại học và World University Tour cho tất cả những ai muốn bắt đầu học đại học.
-            <div class="like-comment-readmore">
-              <a class="read-more" href="#">Xem thêm</a>
-            </div> <!-- /.like-comment-readmore -->
-          </div>
-        </section> <!-- /#featured-sports-news -->
-
-        <ul>
-          <li>
-
-            <div class="ccr-thumbnail">
-              <img src="<%= image_path("sports-thumb-2.jpg") %>" alt="thumbnail-small-1.jpg">
-              <p><a href="#postlink">Xem thêm</a></p>
-            </div>
-            <h5><a href="#">Dự án hỗ trợ sau tốt nghiệp</a></h5>
-          </li>
-          <li>
-
-            <div class="ccr-thumbnail">
-              <img src="<%= image_path("sports-thumb-3.jpg") %>" alt="thumbnail-small-1.jpg">
-              <p><a href="#postlink">Xem thêm</a></p>
-            </div>
-            <h5><a href="#">Dự án hỗ trợ nhập học</a></h5>
-          </li>
-
-
-        </ul>
-
-      </section> <!-- /#ccr-sports-gallery -->
-
-      <section class="bottom-border"></section>
-
-
-
-
 
 
 
@@ -249,8 +198,8 @@
         </div> <!-- .ccr-gallery-ttile -->
 
         <div class="sidebar-entertainment">
-          <a href="rank.html"><img src="<%= image_path("entertainment.jpg") %>" alt="entertainment"></a>
-          <a href="rank.html">Khám phá trường đại học hàng đầu thế giới với World University Rankings</a>
+          <a><img src="<%= image_path("entertainment.jpg") %>" alt="entertainment"></a>
+          <%= link_to 'Khám phá trường đại học hàng đầu thế giới với World University Rankings', home_rank_path %></a>
         </div>
       </section>  <!-- /#sidebar-entertainment-post -->
 

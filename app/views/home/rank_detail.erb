@@ -1,0 +1,76 @@
+<%= render 'header' %>
+
+<section id="ccr-main-section">
+  <div class="container">
+
+
+    <section id="ccr-left-section" class="col-md-8">
+
+
+
+      <% @rank_detail.each do |detail|%>
+          <h1><%= detail.title %></h1>
+          <%= image_tag detail.photo, :size => "764x200" %>
+          <p><%= detail.body %></p>
+
+
+      <% end %>
+
+
+
+
+
+    </section><!-- /.col-md-8 / #ccr-left-section -->
+
+
+
+    <aside id="ccr-right-section" class="col-md-4 ccr-home">
+
+
+
+      <section id="sidebar-entertainment-post">
+        <div class="ccr-gallery-ttile">
+          <span></span>
+          <p><strong>Bảng xếp hạng</strong></p>
+        </div> <!-- .ccr-gallery-ttile -->
+
+        <div class="sidebar-entertainment">
+          <a><img src="<%= image_path("entertainment.jpg") %>" alt="entertainment"></a>
+          <%= link_to 'Khám phá trường đại học hàng đầu thế giới với World University Rankings', home_rank_path %></a>
+        </div>
+      </section>  <!-- /#sidebar-entertainment-post -->
+
+      <section id="ccr-sidebar-newslater">
+
+
+        <div class="sidebar-newslater-form">
+          <form class="ccr-gallery-ttile" action="#">
+            <input type="email" id="sb-newslater" name="sb-newslater" placeholder="Địa chỉ email của bạn" required>
+            <button type="submit">Theo dõi</button>
+
+          </form>
+        </div> <!-- /.sidebar-newslater-form -->
+
+      </section> <!-- /#ccr-sidebar-newslater -->
+
+      <section id="ccr-find-on-fb">
+        <div class="find-fb-title">
+          <span><i class="fa fa-facebook"></i></span>Facebook
+        </div> <!-- /.find-fb-title -->
+
+
+        <div class="fb-like-box" data-href="https://www.facebook.com/topuniversities" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="false" data-show-border="true"></div>
+
+      </section> <!-- /#ccr-find-on-fb -->
+
+
+    </aside><!-- / .col-md-4  / #ccr-right-section -->
+
+
+  </div><!-- /.container -->
+</section><!-- / #ccr-main-section -->
+
+
+
+
+<%= render 'footer' %>

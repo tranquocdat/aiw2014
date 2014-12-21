@@ -15,3 +15,4 @@ source 'http://rubygems.org'
     gem 'tzinfo-data'
     gem 'bcrypt-ruby', :require => "bcrypt"
     gem 'carrierwave'
+    gem 'mini_magick'
